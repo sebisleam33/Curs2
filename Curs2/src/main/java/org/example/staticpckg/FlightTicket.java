@@ -19,11 +19,15 @@ public class FlightTicket {
         createTicket(1, "Economy", 123456);
         createTicket(2, "Business", 123457);
         createTicket(3, "Economy", 123458);
-        System.out.println("Available seats: " + availableSeats);
     }
 
     private static void createTicket(int i, String economy, int i2) {
-        FlightTicket ticket1 = new FlightTicket(1122, i, economy, i2);
-        ticket1.availableSeats--;
+        if (availableSeats > 0) {
+            FlightTicket ticket1 = new FlightTicket(1122, i, economy, i2);
+            ticket1.availableSeats--;
+            System.out.println("Available seats: " + availableSeats);
+        } else {
+            System.out.println("There are no more tickets available.");
+        }
     }
 }
