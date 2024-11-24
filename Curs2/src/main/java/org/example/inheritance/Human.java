@@ -1,9 +1,9 @@
 package org.example.inheritance;
 
 public class Human {
-    public String name;
-    public int age;
-    public String gender;
+    String name;
+    int age;
+    String gender;
 
     public void walk () {
         System.out.println(name + " walks like this");
