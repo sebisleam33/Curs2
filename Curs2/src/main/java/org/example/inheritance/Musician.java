@@ -1,6 +1,9 @@
 package org.example.inheritance;
 
 public class Musician extends Human {
+
+    Keyboard myKeyboard = new Keyboard ();
+
     public void playKeyboard () {
         System.out.println(name + " is playing keyboard now.");
     }
@@ -16,6 +19,6 @@ public class Musician extends Human {
         a.gender = "Male";
         a.playKeyboard();
         a.walk();
-        a.speak();
+        a.myKeyboard.playSound();
     }
 }
