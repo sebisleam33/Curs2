@@ -18,5 +18,12 @@ public class FlightTicket {
     public static void main(String[] args) {
         FlightTicket ticket1 = new FlightTicket(1122, 1, "Economy", 12345);
         ticket1.availableSeats--;
+
+        FlightTicket ticket2 = new FlightTicket(1122, 2, "Business", 12346);
+        availableSeats--;
+
+        FlightTicket ticket3 = new FlightTicket(1122, 3, "Business", 12347);
+        availableSeats--;
+        System.out.println("Available seats: " + availableSeats);
     }
 }
