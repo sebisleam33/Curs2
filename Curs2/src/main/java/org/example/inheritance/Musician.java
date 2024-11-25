@@ -1,25 +1,14 @@
 package org.example.inheritance;
 
-public class Musician implements Human {
+public class Musician extends Human {
 
-    Keyboard myKeyboard = new Keyboard ();
-
-    public void playKeyboard () {
-        System.out.println("Musicians are playing keyboard now.");
-    }
-
-    public void speak () {
-        System.out.println("Musicians will speak calm.");
-    }
     public void walk () {
-        System.out.println("This is how musicians will walk.");
+        System.out.println("This is from Musician.");
     }
 
     public static void main(String[] args) {
         Musician a = new Musician();
-
-        a.playKeyboard();
+        a.speak();
         a.walk();
-        a.myKeyboard.playSound();
     }
 }

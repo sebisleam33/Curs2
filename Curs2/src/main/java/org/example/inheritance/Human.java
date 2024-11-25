@@ -1,10 +1,9 @@
 package org.example.inheritance;
 
-public interface Human {
-    public String BLOOD_COLOUR = "RED";
+public abstract class Human {
 
-    public void walk ();
-     default void speak () {
+    public abstract void walk ();
+     public void speak () {
         System.out.println("Hey I am from Human");
     }
 }

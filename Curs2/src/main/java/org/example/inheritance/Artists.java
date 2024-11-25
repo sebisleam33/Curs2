@@ -1,23 +1,14 @@
 package org.example.inheritance;
 
-public class Artists implements Human, HumanTemp {
+public class Artists extends Human {
 
     public void walk () {
-        System.out.println("This is how the artist will walk.");
-    }
-
-    public void speak () {
-        Human.super.speak();
-    }
-
-    public void preparePaint () {
-        System.out.println(" is preparing for painting.");
+        System.out.println("This is from Artists.");
     }
 
     public static void main(String[] args) {
         Artists a = new Artists();
-
-        a.preparePaint();
         a.speak();
+        a.walk();
     }
 }
