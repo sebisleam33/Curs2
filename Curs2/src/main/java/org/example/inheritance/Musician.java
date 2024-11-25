@@ -17,7 +17,7 @@ public class Musician implements Human {
 
     public static void main(String[] args) {
         Musician a = new Musician();
-        
+
         a.playKeyboard();
         a.walk();
         a.myKeyboard.playSound();
