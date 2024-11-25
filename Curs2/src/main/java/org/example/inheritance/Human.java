@@ -1,9 +1,7 @@
 package org.example.inheritance;
 
-public class Human {
-    String name;
-    int age;
-    String gender;
+public interface Human {
+    public String BLOOD_COLOUR = "RED";
 
     public void walk () {
         System.out.println(name + " walks like this");
