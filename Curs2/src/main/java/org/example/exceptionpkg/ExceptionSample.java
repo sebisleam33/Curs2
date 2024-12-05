@@ -4,7 +4,7 @@ public class ExceptionSample {
     public static void main(String[] args) {
         int userInput = 0;
         try {
-            userInput = Integer.parseInt("8");
+            userInput = Integer.parseInt("1");
             String fruits[] = {"Bananas", "Watermelons", "Apples", "Oranges"};
             System.out.println("User picked: " + fruits[userInput - 1]);
         } catch (NumberFormatException e) {
@@ -13,6 +13,8 @@ public class ExceptionSample {
             System.out.println("Give numbers between 1 to 4.");
         } catch (Exception e) {
             System.out.println("Something went wrong.");
+        } finally {
+            System.out.println("It will always execute.");
         }
     }
 }
