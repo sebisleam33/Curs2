@@ -4,11 +4,15 @@ public class ExceptionSample {
     public static void main(String[] args) {
         try {
             doSomething();
+            throw new MyException("My Message");
         } catch (NumberFormatException e) {
             System.out.println("Invalid numbers.");
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Give numbers between 1 to 4.");
-        } catch (Exception e) {
+        } catch (MyException e) {
+            System.out.println("This is my exception.");
+        }
+        catch (Exception e) {
             System.out.println("Something went wrong.");
         } finally {
             System.out.println("It will always execute.");
